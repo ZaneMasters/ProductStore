@@ -34,13 +34,19 @@
         text: 'Producto agregado con éxito'
       });
     }
+
+        nombre = '';
+        descripcion = '';
+        precio = 0;
+        categoria_id;
+        categorias = [];
   }
 </script>
 
-<main class="flex justify-center items-center min-h-screen bg-base-200">
-  <div class="card w-96 bg-base-100 shadow-xl">
+<main class="flex justify-center items-center min-h-screen bg-base-200 p-4">
+  <div class="card w-full max-w-lg bg-base-100 shadow-xl">
     <div class="card-body">
-      <h1 class="card-title">Agregar Producto</h1>
+      <h1 class="card-title text-center">Agregar Producto</h1>
       <form on:submit|preventDefault={addProduct}>
         <div class="form-control">
           <label class="label">
